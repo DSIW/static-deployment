@@ -89,9 +89,9 @@ Note: Maybe some other improvements of your site are recommended:
 
 Some additional features would be nice:
 
-[ ] Use only commited files for the deployment
-[ ] Parse CSS, JS and images folder from HTML files
-[ ] Deploy to gh-pages
+- [ ] Use only commited files for the deployment
+- [ ] Parse CSS, JS and images folder from HTML files
+- [ ] Deploy to gh-pages
 
 Contribution is very welcome! Create an issue or pull request!
 
