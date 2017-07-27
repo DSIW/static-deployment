@@ -4,6 +4,7 @@ Optimize assets and deploy your static website.
 
 ## Features
 
+* Use only commited files
 * Minify CSS and use MD5 hash as file name
 * Minify JS and use MD5 hash as file name
 * Optimize images (JPG, PNG)
@@ -12,10 +13,12 @@ Optimize assets and deploy your static website.
 Example output:
 
 ```
+$ ./deploy.rb -v
+
 Deploying to staging.example.com...
 Do you want to commmit changes first? [yN] n
 >> Cleaning old build...
->> Cloning...
+>> Cloning commited files...
 >> Minify CSS...
 >> Use MD5 hash for minified CSS...
 >> Remove SASS files...
@@ -89,7 +92,7 @@ Note: Maybe some other improvements of your site are recommended:
 
 Some additional features would be nice:
 
-- [ ] Use only commited files for the deployment
+- [x] Use only commited files for the deployment
 - [ ] Parse CSS, JS and images folder from HTML files
 - [ ] Deploy to gh-pages
 
