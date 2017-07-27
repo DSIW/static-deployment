@@ -1,0 +1,23 @@
+{
+    "assets_dir": "assets",
+    "images_dir": "images",
+    "css_dir": "assets/css",
+    "css_files": [
+        "font-awesome.min.css",
+        "style.css"
+    ],
+    "js_dir": "assets/js",
+    "js_files": [
+        "jquery.min.js",
+        "script.js"
+    ],
+    "pages": [
+        "index.html",
+        "imprint.html"
+    ],
+    "remote": "example.com:/var/www/",
+    "urls": {
+        "staging": "staging.example.com",
+        "production": "examplek.com"
+    }
+}
