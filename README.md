@@ -65,9 +65,18 @@ Options:
     -v, --[no-]verbose               Run verbosely
 ```
 
+Note: Maybe some other improvements of your site are recommended:
+
+* [Activate compression](https://developers.google.com/speed/docs/insights/EnableCompression) on Server for HTML, SVG,... files.
+* [Use browser caching](https://developers.google.com/speed/docs/insights/LeverageBrowserCaching)
+* Set the robots meta tag if you like. [The robots.txt will be ignored if your site is linked.](https://support.google.com/webmasters/answer/6062608)
+* Set favicon using [Favicon Generator](https://favicon.il.ly)
+* Activate HTTPS by using the great [Let's Encrypt](https://letsencrypt.org/)
+
 ### Project structure
 
-The following project structure is needed.
+The website code needs to be in `src/`. Your site will be changed in `build/`. The following project structure
+corresponds to the example `deployment.json`.
 
 ```
 project/
@@ -80,13 +89,6 @@ project/
   build/
     ...
 ```
-
-Note: Maybe some other improvements of your site are recommended:
-
-* [Activate compression](https://developers.google.com/speed/docs/insights/EnableCompression) on Server for HTML, SVG,... files.
-* [Use browser caching](https://developers.google.com/speed/docs/insights/LeverageBrowserCaching)
-* Set the robots meta tag if you like. [The robots.txt will be ignored if your site is linked.](https://support.google.com/webmasters/answer/6062608)
-* Set favicon using [Favicon Generator](https://favicon.il.ly)
 
 ## TODO
 
