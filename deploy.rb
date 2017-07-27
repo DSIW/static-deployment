@@ -123,7 +123,11 @@ class Deployment
         run("minify -o #{minified} #{files.join(' ')}", message: 'Minify CSS')
 
         log ">> Use MD5 hash for minified #{ext.upcase}..."
-        md5 = run("md5sum #{minified}", message: false).chomp.split(/\s+/)[0]
+        if OPTIONS[:dry_run]
+            md5 = 'dry-run'
+        else
+            md5 = run("md5sum #{minified}", message: false).chomp.split(/\s+/)[0]
+        end
         run("mv #{minified} #{File.join(clone_dir, CONFIG['assets_dir'], "#{md5}.min.#{ext}")}", message: false)
         run("rm -rf #{dir}", message: false)
 
